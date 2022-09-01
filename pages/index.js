@@ -112,7 +112,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <div className="h-screen">
+    <div className="h-screen bg-dime-2">
       <Image src={images.disponible} />
       <div className="flex flex-col items-center justify-center mt-10">
         <Image src={images.coffee} width={123} height={123} />
