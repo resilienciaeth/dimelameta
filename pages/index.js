@@ -112,7 +112,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <div className="h-screen bg-dime-2">
+    <div className="h-[130vh] bg-dime-2">
       <Image src={images.disponible} />
       <div className="flex flex-col items-center justify-center mt-10">
         <Image src={images.coffee} width={123} height={123} />
@@ -132,8 +132,10 @@ const Home = () => (
           <Image src={images.pepeposter2} />
         </div>
       </div>
-      <div className="h-[700px] mt-[4rem] mb-0 bg-dime-2">
-        <Image src={images.acompananos} width={500} height={100} />
+      <div className="h-screen mt-[0rem] mb-0 bg-dime-2">
+        <div className="mt-10">
+          <Image src={images.acompananos} width={500} height={100} />
+        </div>
         <div className="flex justify-start items-start px-10">
           <div className="bg-dime-1 mt-10 flex justify-start flex-col rounded-3xl w-full px-4 h-[30rem]">
             <p className="mt-10 text-center font-kanit text-[12px] font-semibold text-dime-2">
