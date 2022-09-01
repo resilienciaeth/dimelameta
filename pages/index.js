@@ -90,7 +90,7 @@ const Home = () => (
           </div>
         </div>
       </div>
-      <div className="flex mt-[4rem] flex-row">
+      <div className="flex mt-[4rem] flex-row mb-[10rem]">
         <div className="w-[50%] flex flex-col justify-center items-center">
           <div>
             <Image src={images.leo} width={160} height={187} />
@@ -114,7 +114,7 @@ const Home = () => (
     </div>
     <div className="h-[150vh] bg-dime-2">
       <Image src={images.disponible} />
-      <div className="flex flex-col items-center justify-center mt-10">
+      <div className="flex flex-col items-center justify-center">
         <Image src={images.coffee} width={123} height={123} />
         <p className="text-center mt-5 px-[5rem] font-semibold text-dime-text font-kanit text-[15px]">Todos los jueves a las 9:00pm CDMX en tus plataformas de podcast favoritas</p>
       </div>
