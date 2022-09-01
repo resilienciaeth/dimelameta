@@ -112,7 +112,7 @@ const Home = () => (
         </div>
       </div>
     </div>
-    <div className="h-[130vh] bg-dime-2">
+    <div className="h-[150vh] bg-dime-2">
       <Image src={images.disponible} />
       <div className="flex flex-col items-center justify-center mt-10">
         <Image src={images.coffee} width={123} height={123} />
