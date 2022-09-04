@@ -9,7 +9,7 @@ const MenuItems = ({ isMobile, active, setActive }) => {
   const generateLink = (i) => {
     switch (i) {
       case 0: return '/';
-      case 1: return '/nakedmeta';
+      case 1: return '/';
       case 2: return '/';
       case 3: return '/';
       default: return '/';
@@ -17,7 +17,7 @@ const MenuItems = ({ isMobile, active, setActive }) => {
   };
 
   return (
-    <ul className={`list-none flexCenter space-x-12 md:space-x-0 sm:space-x-0 flex-row ${isMobile && 'flex-col h-full'}`}>
+    <ul className={`list-none flexCenter  space-x-0 lg:space-x-10 flex-row ${isMobile && 'flex-col h-full'}`}>
       {['Home', 'Invitados', 'Youtube', 'Spotify'].map((item, i) => (
         <li
           key={i}
@@ -31,7 +31,7 @@ const MenuItems = ({ isMobile, active, setActive }) => {
           </Link>
         </li>
       ))}
-      <button type="button" className="bg-button-1 mt-10 rounded-3xl text-[23px] font-kanit font-bold px-4 py-2">Registrarme</button>
+      <button type="button" className="bg-button-1 mt-2 rounded-3xl text-[18px] font-kanit font-bold px-6 py-1">Registrarme</button>
     </ul>
   );
 };
@@ -41,7 +41,7 @@ const Navbar = () => {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
   return (
-    <nav className="flexBetween w-full bg-dime-1 fixed z-10 p-4 sm:p-2 flex-row ">
+    <nav className="flexBetween w-full bg-dime-1 fixed z-10 p-4 lg:p-2 sm:p-2 flex-row ">
       <div className="flex sm:mt-1 flex-1 flex-row justify-start items-center ml-40 md:ml-10 nm:ml-10 sm:ml-8">
         <Link href="/">
           <div className="flexCenter cursor-pointer">
@@ -50,14 +50,14 @@ const Navbar = () => {
         </Link>
       </div>
 
-      <div className="flex flex-initial  flex-row justify-end mr-[10rem] nm:mr-6 sm:mr-2 md:mr-4 nm:px-2 px-4">
-        <div className="md:hidden flex">
+      <div className="flex flex-initial  flex-row justify-end lg:mr-[10rem] nm:mr-6 sm:mr-2 md:mr-4 nm:px-2 px-4">
+        <div className="lg:flex hidden">
           <ul className="list-none flexCenter flex-row ">
             <MenuItems active={active} setActive={setActive} router={router} />
 
           </ul>
         </div>
-        <div className="hidden md:flex">
+        <div className="flex lg:hidden">
           {isOpen
             ? (
               <Image
@@ -81,7 +81,7 @@ const Navbar = () => {
             )}
 
           {isOpen && (
-          <div className="fixed bg-dime-1 h-screen inset-0 overflow-y-hidden top-10 md:top-12 z-10 nav-h flex justify-center items-center flex-col">
+          <div className="fixed bg-dime-1 h-screen inset-0 overflow-y-hidden top-10  z-10 nav-h flex justify-center items-center flex-col">
             <div className="flex-1 p-4">
               <MenuItems active={active} setActive={setActive} isMobile className="items-center" />
             </div>

@@ -24,7 +24,7 @@ module.exports = {
         'button-1': '#F3D061',
         'dime-2': '#F9F9F1',
         'dime-text': '#3B3B3B',
-        
+
         'overlay-black': 'rgba(0, 0, 0, 0.8)',
       },
       width: {
@@ -67,8 +67,8 @@ module.exports = {
       },
     },
     screens: {
-      lg: { max: '1800px' },
-      md: { max: '990px' },
+      lg: { min: '1200px' },
+      md: { min: '601px' },
       sm: { max: '600px' },
       xs: { max: '400px' },
       minmd: '1700px',

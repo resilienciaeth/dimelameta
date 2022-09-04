@@ -15,6 +15,8 @@ import teesperamos from './teesperamos.png';
 import disponible from './disponible.png';
 import acompananos from './acompananos.png';
 import logos from './logos.png';
+import titulo from './titulo.png';
+import disponiblemobile from './disponiblemobile.png';
 
 import redsvg from './red.svg';
 import cross from './cross.png';
@@ -60,6 +62,8 @@ export default {
   spatial,
   ready,
   nakedmeta,
+  titulo,
+  disponiblemobile,
 
   cross,
 
